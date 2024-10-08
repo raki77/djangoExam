@@ -4,4 +4,7 @@ from django.db import models
 
 # 클래스
 class Post(models.Model) :
-    pass
+    title = models.CharField(max_length=30)
+    content = models.TextField()    
+    create_at = models.DateTimeField()
+    
